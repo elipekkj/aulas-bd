@@ -32,4 +32,9 @@ select min(preco) as valor from modelo mo;
 update modelo set preco = preco *1.1;
 ----------------------------------------------
 
+8) FAZER UPDATE EM DUAS COLUNAS DIFERENTES AO MESMO TEMPO
+UPDATE conta set saldo = case when saldo <= 2000 then saldo + 500
+else saldo + 500
+end;
+
 
